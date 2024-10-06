@@ -1,9 +1,9 @@
 import styled from 'styled-components/native';
-export const InputContainer= styled.TextInput`
+export const InputContainer= styled.View`
 flex-direction:row;
 width:100%;
 border-radius: 4px;
-backgroundColor:#FEFCFC;
+background-color: #FEFCFC;
 `;
 
 export const Input= styled.TextInput`
@@ -14,7 +14,7 @@ color:black;
 `;
 
 export const InputButton = styled.TouchableOpacity`
-backgroundColor:#FEFCFC;
-paddig:20px;
+background-color: #FEFCFC;
+padding:20px;
 border-radius:4px;
 `;

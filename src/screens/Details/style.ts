@@ -3,7 +3,7 @@ import styled from "styled-components/native/";
 export const Container = styled.View
 `
 flex: 1;
-background-color:#FFA500.;
+background-color:'black'.;
 padding: 16px;
 padding-top: 64px;
 gap: 16px;
@@ -33,7 +33,7 @@ export const TitleContainer = styled.View
 `
 background-color: #FFA500;
 border-radius: 4px:
-padding: 8px 16px;
+padding:16px;
 
 `;
 

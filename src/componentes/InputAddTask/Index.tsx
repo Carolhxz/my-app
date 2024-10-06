@@ -1,6 +1,7 @@
 import {Feather} from '@expo/vector-icons';
 import {InputContainer,Input,InputButton}from './style' ;
 import React from 'react';
+import {View,TextInput, TouchableOpacity} from 'react-native';
 
 type Props ={
    onPress:()=> void;
@@ -9,22 +10,29 @@ type Props ={
    value:string ;
 }
 export function InputAddTask({onPress,onChargeText,onBlur,value}:Props){
-  return(
-  <InputContainer>
-  <Input
-  placeholder = 'Digite algo'
-  placeholderTextColor="black"
-  keyboardType='default'
-  value={value}
-  onChangeText={onChargeText}
-  onBlur= {onBlur}
-  />
-  <InputButton onPress={onPress}>
-  <Feather name = "plus-square" size={50} color ="while"/>
-  
-  </InputButton>
+  return (
+    <View style={{
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: '#f2f2f2',
+      borderRadius: 8,
+      padding: 16,
+      marginBottom: 10,
+      height:70,
+      width:300
+    }}>
+      <TextInput
+        style={{ flex: 1 }}
+        placeholder="Digite sua tarefa"
+        value={value}
+        onChangeText={onChargeText}
+        onBlur={onBlur}
+      />
+      <TouchableOpacity onPress={onPress}>
+        <Feather name="plus-square" size={40} color="#333" />
+      </TouchableOpacity>
+    </View>
+  );
+};
 
-</InputContainer>
-);
-
-}
+export default InputAddTask;

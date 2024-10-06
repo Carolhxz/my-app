@@ -11,5 +11,5 @@ export type TaskProps = {
 export type RootStackParamList = {
 
     Home: undefined;
-    Detaills: TaskProps;
+    Detaills: any;
 }

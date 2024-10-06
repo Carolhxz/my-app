@@ -51,9 +51,8 @@ function handleTaskChangeStatus(taskToChange : TaskProps){
 } 
 
 function handleTaskDelete(taskToDelete : TaskProps){
-  //console.log('Deseja realmente excluir a tarefa?');
   Alert.alert(
-  "Atenção!", `Deseja realmente remover a tarefa ${taskToDelete.title}?`,
+  "Atenção!", `Deseja realmente excluir a tarefa ${taskToDelete.title}?`,
   [
     {text: "Sim",
       onPress: () => {
